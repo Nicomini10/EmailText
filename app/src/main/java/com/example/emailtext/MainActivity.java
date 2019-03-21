@@ -9,8 +9,9 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText mytext;
-    Button invia;
+    EditText textEmail;
+    Button buttonInvia;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        mytext = (EditText) findViewById(R.id.editText);
-        invia = (Button) findViewById(R.id.button);
-        invia.setOnClickListener(new View.OnClickListener() {
+        textEmail = (EditText) findViewById(R.id.editText);
+        buttonInvia = (Button) findViewById(R.id.button);
+        buttonInvia.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 emailIntent.putExtra(Intent.EXTRA_TITLE, "My Title");
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, "My Subject");
 
-                emailIntent.putExtra(Intent.EXTRA_TEXT, mytext.getText());
+                emailIntent.putExtra(Intent.EXTRA_TEXT, textEmail.getText());
 
                 startActivity(emailIntent);
 
