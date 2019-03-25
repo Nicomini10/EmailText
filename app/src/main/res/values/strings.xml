@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Email Text</string>
     <string name="Email">Invia Email</string>
-    <string name="Insert_email">Insert Text</string>
+    <string name="Insert_email">Inserisci il testo</string>
     <string name="hello">Ciao sono Nico</string>
     <string name="my_text">Ciao mi chiamo Nico Minichillo e sono uno studente</string>
 </resources>
