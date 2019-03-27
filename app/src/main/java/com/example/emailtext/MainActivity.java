@@ -12,6 +12,7 @@ import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText oggettoEmail;
     EditText textEmail;
     Button buttonInvia;
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        oggettoEmail = (EditText) findViewById(R.id.editText2);
         textEmail = (EditText) findViewById(R.id.editText);
         buttonInvia = (Button) findViewById(R.id.button);
         buttonInvia.setOnClickListener(new View.OnClickListener() {
@@ -31,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent emailIntent = new Intent(Intent.ACTION_SEND);
 
-                emailIntent.putExtra(Intent.EXTRA_TITLE, "My Title");
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "My Subject");
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, oggettoEmail.getText().toString());
+
 
                 emailIntent.putExtra(emailIntent.EXTRA_EMAIL, new String[]{"nicominichillo@hotmail.com"});
 
