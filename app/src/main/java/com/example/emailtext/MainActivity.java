@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        oggettoEmail = (EditText) findViewById(R.id.editText2);
-        textEmail = (EditText) findViewById(R.id.editText);
+        oggettoEmail = (EditText) findViewById(R.id.editTextOggetto);
+        textEmail = (EditText) findViewById(R.id.editTextEmail);
         buttonInvia = (Button) findViewById(R.id.button);
         buttonInvia.setOnClickListener(new View.OnClickListener() {
 

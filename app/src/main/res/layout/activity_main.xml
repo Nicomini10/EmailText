@@ -7,7 +7,7 @@
 
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextOggetto"
         android:hint="@string/Oggetto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTextEmail"
         android:hint="@string/Insert_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
